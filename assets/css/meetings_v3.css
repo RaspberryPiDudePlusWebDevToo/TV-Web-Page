@@ -1,0 +1,215 @@
+body {
+    margin: 0;
+}
+
+#clubName {
+    position: relative;
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+    font-size: 100px;
+}
+
+#shslogo {
+    position: absolute;
+    z-index: 3;
+    width: 375px;
+    height: auto;
+    margin-left: 202.156px;
+    margin-top: 273.5px;
+}
+
+#announcement_title {
+    display: inline-block; /*makes the header no larger than its contents*/
+    /*margin-left: 722.9455px;*/
+    margin-left: 375px;
+    font-family: 'Caveat Brush', cursive;
+    letter-spacing: 1px;
+    color: white;
+    font-size: 75px;
+    text-shadow: 2px 2px 4px #000000;
+}
+
+#canvas {
+    /*background-image: url('C:/Users/micro/SublimeTextPortfolio/STEM Club TV Announcement Page/assets/images/free-space-wallpaper-1.jpg');*/
+    /*background-image: -webkit-radial-gradient(center, ellipse farthest-corner, #FFFFFF 0%, #127848 75%);*/
+    background: #18453b;
+    position: absolute;
+    display: block;
+}
+
+#steinert {
+    font-family: 'Caveat Brush', cursive;
+    position: absolute;
+    /*border: 2px solid black;*/
+    margin-left: 281.9845px;
+    margin-top: 173.5px;
+    color: #FFFFFF;
+    letter-spacing: 2px;
+    font-size: 75px;
+    text-shadow: 2px 2px 4px #000000;
+    z-index: 3;
+}
+
+#card {
+    width: 1500px;
+    position: absolute;
+    height: 833px;
+    /*border: 1px solid black;*/
+    margin: 50px;
+    margin-top: 123.5px;
+    left: 7.890625%;
+    box-shadow: 0px 0px 51px 0px rgba(0,0,0,0.75);
+    z-index: 2;
+}
+
+#dummy_card {
+    width: 1550px;
+    position: absolute;
+    height: 883px;
+    background: #18453b;
+    box-shadow: 0px 0px 51px 0px rgba(0,0,0,0.75);
+    margin-left: 175.156px;
+    margin-top: 100px;
+    z-index: 1;
+}
+
+#dummy_card2 {
+    width: 1600px;
+    position: absolute;
+    height: 933px;
+    background: #18453b;
+    box-shadow: 0px 0px 51px 0px rgba(0,0,0,0.75);
+    margin-left: 150.156px;
+    margin-top: 75px;
+}
+
+#card_top {
+    /*border: 1px solid red;*/
+    width: 1500px;
+    height: 183px;
+}
+
+#top_strip {
+    width: 1500px;
+    height: 150px;
+    /*border: 1px dotted blue;*/
+    background: #18453b;
+    /*background: #2f5b2c;*/
+    /*border-top-left-radius: 50px;
+    border-top-right-radius: 50px;*/
+}
+
+#bottom_strip {
+    width: 1500px;
+    height: 33px;
+    /*border: 1px dotted green;*/
+}
+
+.color {
+    width: 375px;
+    height: 33px;
+    float: left;
+}
+
+#color1 {
+    background: #18453b;
+    /*background: #2f5b2c;*/
+}
+
+#color2 {
+    /*background: #15d00e;*/
+    background: white;
+    /*background: #18453b;*/
+}
+
+#color3 {
+    /*background: #f2f209;*/
+    background: white;
+    /*background: #18453b;*/
+}
+
+#color4 {
+    /*background: #ef2710;*/
+    background: white;
+    /*background: #18453b;*/
+}
+
+#card_bottom {
+    height: 650px;
+    width: 1500px;
+    background: #18453b;
+    /*background: #2f5b2c;*/
+    /*border-bottom-left-radius: 50px;
+    border-bottom-right-radius: 50px;*/
+}
+
+@-webkit-keyframes ticker {
+  0% {
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+    visibility: visible;
+  }
+
+  100% {
+    -webkit-transform: translate3d(-100%, 0, 0);
+    transform: translate3d(-100%, 0, 0);
+  }
+}
+
+@keyframes ticker {
+  0% {
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+    visibility: visible;
+  }
+
+  100% {
+    -webkit-transform: translate3d(-100%, 0, 0);
+    transform: translate3d(-100%, 0, 0);
+  }
+}
+
+.line {
+    margin-top: 1006px;
+    position: absolute;
+    background: white;
+    height: 10px;
+    width: 100%;
+}
+
+.ticker-wrap {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    overflow: hidden;
+    height: 4rem;
+    background-color: #000000
+    padding-left: 100%;  /*offset items to begin*/
+
+}
+
+.ticker {
+
+    display: inline-block;
+    height: 4rem;
+    line-height: 4rem;
+    white-space: nowrap; /*display items in a line*/
+    padding-left: 100%; /*ensure items go before animations repeat (taken from parent due to inline-block)*/
+
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    animation-name: ticker;
+    animation-duration: 30s;
+
+
+
+}
+
+.ticker__item {
+    display: inline-block;
+    font-family: 'Roboto', sans-serif;
+    padding: 0 1rem;
+    font-size: 2rem;
+    /*font-size: 4rem;*/
+    color: white;
+}

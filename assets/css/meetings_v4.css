@@ -1,0 +1,213 @@
+body {
+    margin: 0;
+    background: #18453b;
+}
+
+.decoration_wrapper {
+    float: top;
+    position: relative;
+}
+
+#shslogo {
+    position: absolute;
+    /*width: 23.232447916666666666666666666667%;*/
+    width: 20vw;
+    height: auto;
+    left: 1.3020833333333333333333333333333%;
+    /*top: 23.981481481481481481481481481481%;*/
+}
+
+#announcement_title {
+    display: inline-block; /*makes the header no larger than its contents*/
+    margin-top: 0;
+    margin-bottom: 0;
+    margin-left: 3.5%;
+    font-family: 'Caveat Brush', cursive;
+    letter-spacing: 2px;
+    color: white;
+    font-size: 7.1vw;
+    text-shadow: 2px 2px 4px #000000;
+}
+
+#steinert {
+    display: inline-block;
+    font-family: 'Caveat Brush', cursive;
+    margin-left: 1.3020833333333333333333333333333%;
+    margin-top: 0;
+    margin-bottom: 0;
+    color: #FFFFFF;
+    letter-spacing: 2px;
+    font-size: 7.1vw;
+    text-shadow: 2px 2px 4px #000000;
+}
+
+#date {
+    display: inline-block;
+    margin-top: 0;
+    margin-bottom: 0;
+    margin-left: 7%;
+    font-family: 'Caveat Brush', cursive;
+    letter-spacing: 2px;
+    color: white;
+    font-size: 7.1vw;
+    text-shadow: 2px 2px 4px #000000;
+}
+
+.color_strip {
+    width: 100%;
+    height: 33px;
+}
+
+.color {
+    width: 25%;
+    background: white;
+    height: 2.5vh;
+    float: left;
+}
+
+#color1 {
+    background: #18453b;
+}
+
+#color2 {
+    background: white;
+}
+
+#color3 {
+    background: white;
+}
+
+#color4 {
+    background: white;
+}
+
+#club_name {
+    display: inline-block;
+    font-family: 'Caveat Brush', cursive;
+    margin-left: 1.3020833333333333333333333333333%;
+    margin-top: 0;
+    margin-bottom: 0;
+    margin-left: 46.975104166666666666666666666667%;
+    color: #FFFFFF;
+    letter-spacing: 2px;
+    font-size: 8vw;
+    text-shadow: 5px 5px 25px #000000;
+}
+
+/*Progress Bar*/
+
+#next_up {
+    width: 100%;
+    border-top: 2px solid white;
+    border-bottom: 2px solid white;
+    text-align: center;
+    font-size: 2vw;
+    background: #18453b;
+    color: white;
+    font-family: 'Roboto', sans-serif;
+    text-shadow: 2px 2px 4px #000000;
+}
+
+#green_bar {
+    position: absolute;
+    width: 100%;
+    height: 50px;
+    top: 436.4px;
+    right: 0%; /*attaches the progress bar to the right side of the screen*/
+    background: #18453b;
+}
+
+.meeting_info {
+    float: top;
+    margin-left: 1.3020833333333333333333333333333%;
+    text-shadow: 2px 2px 4px #000000;
+}
+
+.info {
+    color: white;
+    font-family: 'Roboto', sans-serif;
+    /*font-family: 'Caveat Brush', cursive;*/
+    font-size: 5vw;
+    margin-top: 3.5%;
+    margin-bottom: 0;
+}
+
+/*Ticker*/
+
+@-webkit-keyframes ticker {
+  0% {
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+    visibility: visible;
+  }
+
+  100% {
+    -webkit-transform: translate3d(-100%, 0, 0);
+    transform: translate3d(-100%, 0, 0);
+  }
+}
+
+@keyframes ticker {
+  0% {
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+    visibility: visible;
+  }
+
+  100% {
+    -webkit-transform: translate3d(-100%, 0, 0);
+    transform: translate3d(-100%, 0, 0);
+  }
+}
+
+.bottom_unit {
+    bottom: 0;
+    position: absolute;
+    width: 100%;
+    height: 6.5rem;
+}
+
+.line {
+    position: absolute;
+    top: 0;
+    background: white;
+    height: 0.5rem;
+    width: 100%;
+}
+
+.ticker-wrap {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    overflow: hidden;
+    height: 6rem;
+    background-color: #000000
+    padding-left: 100%;  /*offset items to begin*/
+
+}
+
+.ticker {
+
+    display: inline-block;
+    height: 6rem;
+    line-height: 6rem;
+    white-space: nowrap; /*display items in a line*/
+    padding-left: 100%; /*ensure items go before animations repeat (taken from parent due to inline-block)*/
+
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    animation-name: ticker;
+    animation-duration: 30s;
+
+
+
+}
+
+.ticker__item {
+    display: inline-block;
+    font-family: 'Roboto', sans-serif;
+    padding: 0 2rem;
+    font-size: 4rem;
+    /*font-size: 4rem;*/
+    color: white;
+}

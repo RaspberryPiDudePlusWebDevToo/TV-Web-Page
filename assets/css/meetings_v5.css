@@ -1,0 +1,233 @@
+body {
+    margin: 0;
+    background: #18453b;
+}
+
+#shslogo {
+    /*width: 23.232447916666666666666666666667%;*/
+    width: 12vw;
+    height: auto;
+    left: 1.3020833333333333333333333333333%;
+    /*top: 23.981481481481481481481481481481%;*/
+}
+
+.watermark {
+    /*border-left: 0.5rem solid white;
+    border-top: 0.5rem solid white;*/
+    z-index: 1;
+    position: absolute;
+    right: 0%;
+    /*bottom: 12%;*/
+    bottom: 0%;
+    background: #18453b;
+}
+
+#time {
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+    margin-left: 1.3020833333333333333333333333333%;
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-bottom: 5%;
+    color: #FFFFFF;
+    letter-spacing: 2px;
+    font-size: 2vw;
+    text-shadow: 2px 2px 4px #000000;
+}
+
+.color_strip {
+    margin-top: 1%;
+    width: 100%;
+    height: 33px;
+    display: inline-block;
+}
+
+.color {
+    width: 25%;
+    height: 2.5vh;
+    float: left;
+}
+
+#color1 {
+    margin-left: 25%;
+    background: white;
+}
+
+#color2 {
+    background: white;
+}
+
+#club_name {
+    width: 100%;
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+    margin-top: 0;
+    margin-bottom: 0;
+    color: #FFFFFF;
+    letter-spacing: 2px;
+    font-size: 8vw;
+    text-shadow: 5px 5px 25px #000000;
+}
+
+/*Progress Bar*/
+
+#next_up {
+    width: 100%;
+    border-bottom: 5px solid white;
+    text-align: center;
+    font-size: 2vw;
+    background: #18453b;
+    color: white;
+    margin: 0;
+    margin-top: 5px;
+    font-family: 'Roboto', sans-serif;
+    text-shadow: 2px 2px 4px #000000;
+}
+
+#green_bar {
+    position: absolute;
+    width: 100%;
+    top: 0;
+    height: 56px;
+    right: 0%; /*attaches the progress bar to the right side of the screen*/
+    background: #18453b;
+}
+
+/*Meeting Info*/
+
+.when {
+    margin-top: 2%;
+}
+
+.when, .where {
+    /*border: 1px solid #000;*/
+    display:flex;
+    justify-content: center;
+    padding: 3px;
+}
+
+.when > h2, .where > h2 {
+    /*border: 1px solid #000;*/
+    margin: 2px;
+}
+
+.label, #date, #place {
+    font-family: 'Roboto', sans-serif;
+    color: white;
+    text-shadow: 2px 2px 4px #000000;
+}
+
+.label {
+    font-size: 5rem;
+}
+
+#date, #place {
+    margin-left: 1%;
+    margin-top: 0.9%;
+    font-size: 4rem;
+    text-decoration: underline;
+}
+
+#description {
+    width: 100%;
+    font-family: 'Roboto', sans-serif;
+    font-size: 3rem;
+    color: white;
+    text-align: center;
+    text-shadow: 2px 2px 4px #000000;
+}
+
+.where, #description {
+    margin-top: 3%
+}
+
+#quote {
+    display: inline-block;
+    font-style: italic;
+    font-family: 'Roboto', sans-serif;
+    font-size: 2rem;
+    color: white;
+    position: absolute;
+    bottom: 12%;
+    left: 1.5%;
+    margin: 0;
+    text-shadow: 2px 2px 4px #000000;
+}
+
+/*Ticker*/
+
+@-webkit-keyframes ticker {
+  0% {
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+    visibility: visible;
+  }
+
+  100% {
+    -webkit-transform: translate3d(-100%, 0, 0);
+    transform: translate3d(-100%, 0, 0);
+  }
+}
+
+@keyframes ticker {
+  0% {
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+    visibility: visible;
+  }
+
+  100% {
+    -webkit-transform: translate3d(-100%, 0, 0);
+    transform: translate3d(-100%, 0, 0);
+  }
+}
+
+.bottom_unit {
+    bottom: 0;
+    position: absolute;
+    width: 100%;
+    height: 6.5rem;
+}
+
+.line {
+    position: absolute;
+    top: 0;
+    background: white;
+    height: 0.5rem;
+    width: 100%;
+}
+
+.ticker-wrap {
+    position: fixed;
+    bottom: 0;
+    width: 88.00046875%;
+    overflow: hidden;
+    height: 6rem;
+    background-color: #000000
+    padding-left: 100%;  /*offset items to begin*/
+
+}
+
+.ticker {
+
+    display: inline-block;
+    height: 6rem;
+    line-height: 6rem;
+    white-space: nowrap; /*display items in a line*/
+    padding-left: 100%; /*ensure items go before animations repeat (taken from parent due to inline-block)*/
+
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    animation-name: ticker;
+    animation-duration: 30s;
+}
+
+.ticker__item {
+    display: inline-block;
+    font-family: 'Roboto', sans-serif;
+    padding: 0 2rem;
+    font-size: 4rem;
+    /*font-size: 4rem;*/
+    color: white;
+    text-shadow: 2px 2px 4px #000000;
+}
